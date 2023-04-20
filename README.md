@@ -1,7 +1,7 @@
 # Parse-Zip-File-Compressor
 Parser Zip File Compressor program utilizes Huffman coding to efficiently compress and decompress files without any data loss.
 
-Here are some snapshots:
+## Here are some snapshots:
 
 ![Image Compression]()
 
