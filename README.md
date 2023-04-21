@@ -1,9 +1,49 @@
 # Parse-Zip-File-Compressor
 Parser Zip File Compressor program utilizes Huffman coding to efficiently compress and decompress files without any data loss.
 
-## Here are some snapshots:
+## Huffman Compressor
+Huffman code is a particular type of optimal prefix code that is commonly used for lossless data compression. Huffman coding, an algorithm developed by [David A. Huffman](https://en.wikipedia.org/wiki/David_A._Huffman).
+As we know that systems store in [ASCII](https://en.wikipedia.org/wiki/ASCII) format. Where each character is 1 byte or 8 bits i.e. 256 different characters are possible and are present. For compressing the data, all 8 bits is not a necessary instead each character can assigned to a number (which will be followed further steps). Based on the number assigned we compress the data.
 
-![Image Compression]()
+## Sample File Compression
+
+ **1. Sample1.txt**
+ - Original File size: 17,01,978 bytes
+ - Compressed File size: 9,26,037 bytes
+ - Compression Rate: ~45.6%
+ <div></div>
+ 
+ ![Sample 1](https://raw.githubusercontent.com/NyanCyanide/Huffman-Compressor/main/Assets/sample1.png)
+
+<div></div>
+
+## Executing
+
+Well...! for compressed file I have used as '.huff' just short for Huffman, Please do not think this is an unnecessary file😅
+
+Run the batch file:
+
+    ./Makefile.bat
+(or)
+Execute the command:
+
+    gcc -Wall -save-temps "client.c" "encode.c" "decode.c" "huffman.c" -o ""Huffman.exe"
+
+For compressing the file
+Use `-encode` as flag
+For reverting to original file
+Use `-decode` as flag
+
+To start executing
+
+    ./Huffman.exe <flag> <filepath>
+Example:
+For Encoding the sample1.txt file
+
+    ./Huffman.exe -encode "./Example/sample1.txt"
+For decoding the sample1.txt.huff file
+
+    ./Huffman.exe -decode "./Example/sample1.txt.huff"
 
 ## 🪪 License
 
