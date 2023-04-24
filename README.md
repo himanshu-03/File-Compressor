@@ -1,9 +1,13 @@
 # Parse-Zip-File-Compressor
 Parser Zip File Compressor program utilizes Huffman coding to efficiently compress and decompress files without any data loss.
 
+<br>
+
 ## Huffman Compressor
 Huffman code is a particular type of optimal prefix code that is commonly used for lossless data compression. Huffman coding, an algorithm developed by [David A. Huffman](https://en.wikipedia.org/wiki/David_A._Huffman).
 As we know that systems store in [ASCII](https://en.wikipedia.org/wiki/ASCII) format. Where each character is 1 byte or 8 bits i.e. 256 different characters are possible and are present. For compressing the data, all 8 bits is not a necessary instead each character can assigned to a number (which will be followed further steps). Based on the number assigned we compress the data.
+
+<br>
 
 ## Sample File Compression
 
@@ -16,10 +20,9 @@ As we know that systems store in [ASCII](https://en.wikipedia.org/wiki/ASCII) fo
  ![Sample 1](https://raw.githubusercontent.com/NyanCyanide/Huffman-Compressor/main/Assets/sample1.png)
 
 <div></div>
+<br>
 
 ## Executing
-
-Well...! for compressed file I have used as '.huff' just short for Huffman, Please do not think this is an unnecessary file😅
 
 Run the batch file:
 
